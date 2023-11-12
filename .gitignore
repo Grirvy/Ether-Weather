@@ -129,8 +129,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# ignore env files
-.env
-
 # ignore node_modules
 node_modules
