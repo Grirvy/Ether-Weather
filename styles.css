@@ -1,3 +1,106 @@
-h1 {
-    color: blue
+:root {
+    --main-color: #1b133f;
+    --main-color-light: #ffffff;
+    --main-color-dark: #000000;
+    --alt-color-light: #dbdbdb;
+    --text-style: 'Arial', sans-serif;
+
 }
+
+/* ----------------- Dashboard Title ----------------- */
+#dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-color);
+}
+
+
+body {
+  font-family: var(--text-style);
+  background-color: var(--main-color-light);
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--main-color-dark);
+  background-color: var(--main-color-light);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#weatherInfo, #forecast, #searchHistoryContainer {
+  margin-top: 20px;
+}
+
+/* ----------------- Forecast ----------------- */
+#forecastInfo {
+  margin-top: 20px;
+
+}
+
+#forecast {
+  background-color: var(--main-color);
+  flex-wrap: wrap;
+  width: 20%;
+}
+
+.forecast-day {
+  color: var(--main-color-light);
+  margin: 5px;
+  padding: 5px;
+}
+
+.forecast-seperator {
+  border: 10px solid var(--main-color-light);
+
+}
+
+/*----------------- Search History -----------------*/
+#searchHistoryContainer {
+  background-color: var(--main-color-light);
+  width: 40%;
+}
+
+
+.history-item {
+    background-color: var(--alt-color-light);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--main-color-dark);
+    transition: background-color 0.3s;
+}
+
+.history-item:hover {
+    background-color: var(--main-color-light);
+    cursor: pointer;
+}
+  

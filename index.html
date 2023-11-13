@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Weather Dashboard</title>
 </head>
-<h1>Ether Weather</h1>
 <body>
+    <h1 id="dashboard-title">Weather Dashboard</h1>
+    <div class="container">
+        <form id="searchForm">
+            <label for="cityInput">Search for a City:</label>
+            <input type="text" id="cityInput">
+            <button type="button" onclick="searchWeather()">Search</button>
+        </form>
+
+        <div id="weatherInfo">
+
+        </div>
+
+        <div id="forecastInfo">
+            
+
+        </div>
+    </div>
+    <h2>5-Day Forecast:</h2>
+        <div id="forecast">
+
+        </div>
     
+
+    <div id="searchHistoryContainer">
+        <!-- Display the name of the cities from previous search results -->
+    
+        <div id="searchHistory">
+
+    </div>
+        </div>
+     <button id="clearHistoryButton" onclick="clearSearchHistory()">Clear</button>
+
 </body>
 <script src="./script.js"></script>
 </html>
