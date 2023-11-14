@@ -1,6 +1,4 @@
-const apiKey = //API KEY HERE;
-
-async function searchWeather() {
+async function searchWeather(apiKey) {
     const cityInput = document.getElementById('cityInput').value;
 
     if (cityInput.trim() === '') {
