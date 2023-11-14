@@ -129,6 +129,6 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# igore node_modules
-node_modules
+# igore key
+key.js
 
